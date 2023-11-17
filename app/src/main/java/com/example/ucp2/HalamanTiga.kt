@@ -21,8 +21,9 @@ import com.example.ucp2.data.FormUIState
 @Composable
 fun HalamanTiga(
     formUIState: FormUIState,
-    modifier: Modifier = Modifier,
-    onCancelButtonCLicked: () -> Unit
+    onCancelButtonCLicked: () -> Unit,
+    modifier: Modifier = Modifier
+
 
 ){
     val items = listOf(

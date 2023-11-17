@@ -38,4 +38,8 @@ class FormViewModel : ViewModel() {
             )
         }
     }
+
+fun resetPilihan(){
+    _stateUI.value = FormUIState()
+}
 }

@@ -52,6 +52,17 @@ fun UcpApp(
                     onNextButtonClicked = {navController.navigate(PengelolaHalaman.Summary.name)}
                 )
             }
+            composable(route = PengelolaHalaman.Summary.name){
+                HalamanTiga(formUIState = uiState, onCancelButtonCLicked = { cancelOrderAndNavigateToForm(viewModel, navController) })
+            }
         }
     }
+}
+
+private fun cancelOrderAndNavigateToForm(
+    viewModel: FormViewModel,
+    navController: NavHostController
+){
+    viewModel.resetPilihan()
+    navController.popBackStack(PengelolaHalaman.Formulir.name, inclusive = false)
 }

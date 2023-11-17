@@ -48,8 +48,9 @@ fun UcpApp(
                     onSelectrionDp1 = {viewModel.setDp1(it)},
                     pilihandospem2 = DataSource.dosenpem.map { id ->
                         context.resources.getString(id)},
-                    onSelectrionDp2 = {viewModel.setDp1(it)},
-                    onNextButtonClicked = {navController.navigate(PengelolaHalaman.Summary.name)}
+                    onSelectrionDp2 = {viewModel.setDp2(it)},
+                    onNextButtonClicked = {viewModel.setContact(it)
+                        navController.navigate(PengelolaHalaman.Summary.name)}
                 )
             }
             composable(route = PengelolaHalaman.Summary.name){

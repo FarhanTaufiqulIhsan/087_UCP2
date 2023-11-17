@@ -92,7 +92,7 @@ fun HalamanDua(
             modifier = modifier,
             verticalArrangement = Arrangement.SpaceBetween)
         {
-            Row (modifier = Modifier.padding(10.dp)){
+            Row (){
                 pilihandospem1.forEach { item ->
                     Row(modifier = Modifier.selectable(
                         selected = dosenpemb1 == item,
@@ -114,7 +114,7 @@ fun HalamanDua(
                     }
                 }
             }
-            Row (modifier = Modifier.padding(10.dp)){
+            Row (){
                 pilihandospem2.forEach { item ->
                     Row(modifier = Modifier.selectable(
                         selected = dosenpemb2 == item,

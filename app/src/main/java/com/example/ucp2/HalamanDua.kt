@@ -55,7 +55,7 @@ fun HalamanDua(
             .fillMaxSize()
             .padding(16.dp)
     ){
-        Text(text = "Data Pelanggan",
+        Text(text = "Formulir Pengujian Skripsi",
             fontSize = 25.sp,
             fontWeight = FontWeight.Bold
         )
